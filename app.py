@@ -35,7 +35,7 @@ def get_items():
 @app.route('/items', methods=['POST'])
 def add_item():
     data = request.get_json()
-    print(data)  # Отладочная информация
+    print(data)
        
     if data is None:
         return jsonify({'error': 'No input data provided'}), 400
