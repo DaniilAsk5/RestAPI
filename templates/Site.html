@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client server App</title>
+  </head>
+  <body>
+    <h1>Items</h1>
+    <ul id="item-list"></ul>
+    <form id="item-form">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="description" placeholder="Description" required>
+      <button type="submit">Add Item</button>
+    </form>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
